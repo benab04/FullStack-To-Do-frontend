@@ -1,16 +1,13 @@
 import React from "react";
+import { AiFillDelete, AiFillEdit } from "react-icons/ai";
 
 const ToDo = ({ text, updateMode, deleteToDo }) => {
   return (
-    <div className="todo" style={{ display: "flex" }}>
+    <div className="todo">
       <div className="text">{text}</div>
       <div className="icons">
-        <div className="icon" onClick={updateMode}>
-          update
-        </div>
-        <div className="icon" onClick={deleteToDo}>
-          delete
-        </div>
+        <AiFillEdit className="icon" onClick={updateMode} />
+        <AiFillDelete className="icon" onClick={deleteToDo} />
       </div>
     </div>
   );

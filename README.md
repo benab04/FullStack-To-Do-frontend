@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+To visit the website directly, integrated with the backend, use:
+https://famous-alpaca-32d62a.netlify.app/
+
+Otherwise, to get only the frontend part, follow the steps.
+
 In the project directory, you can run:
 
 ### `npm start`

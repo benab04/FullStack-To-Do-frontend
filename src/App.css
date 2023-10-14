@@ -1,0 +1,136 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.App{
+    background-color: #FFD6FF;
+    min-height:100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color:white;
+    padding:20px 40px;
+    border-radius: 20px;
+    width:300px;
+
+}
+.top input{
+    height:40px;
+    max-width:24rem;
+    padding:0 20px;
+    background-color: #E7C6FF;
+    border:none;
+    border-radius: 20px;
+    margin:0 4px;
+}
+.top input::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+.add{
+    padding:10px 20px;
+    margin: 0 10px 0 40px;
+    border-radius: 15px;
+    background-color: #B8C0FF;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:40px 0;
+    background-color:white;
+    padding:40px;
+    border-radius: 20px;
+    width:300px;
+    
+}
+.todo{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: row;
+    padding: 10px 10px;
+    width:270px;
+    word-wrap: break-word;
+    background-color: #B8C0FF;
+    margin:10px 0;
+    border-radius: 10px;
+}
+.icon{
+    align-self: right;
+    cursor: pointer;
+    padding:0 5px;
+    font-size: 20px;
+    
+}
+.text{
+    line-height:1;
+    width:fit-content;
+    width: 90%;
+    word-wrap:break-word;
+    word-break: break-all;
+}
+.icons{
+    
+    display: flex;
+    padding:0 10px;
+}
+
+@media screen and (max-width:475px) {
+    .top{
+        padding:20px 0px;
+        border-radius: 20px;
+        width:260px;
+    
+    }
+    .top input{
+        height:40px;
+        width:7rem;
+        padding:0 3px 0 8px;
+        margin:0 -1px 0 10px;
+    }
+    .top input::placeholder{
+        font-family: 'Poppins', sans-serif;
+    }
+    .add{
+        padding:6px 20px;
+        margin: 0 10px 0 10px;
+    }
+    .list{
+        margin:40px 0;
+        padding:6px;
+        width:260px;
+        
+    }
+    .todo{
+        padding: 10px 10px;
+        width:220px;
+        word-wrap: break-word;
+        margin:10px 0;
+    }
+    .icon{
+        padding:0 5px;
+        font-size: 20px;
+        
+    }
+    .text{
+        line-height:1;
+        width:fit-content;
+        width: 90%;
+        word-wrap:break-word;
+        word-break: break-all;
+    }
+    .icons{
+        padding:0 10px;
+    }
+}

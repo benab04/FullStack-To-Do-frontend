@@ -1,7 +1,7 @@
 import ToDo from "./components/ToDo";
 import { useEffect, useState } from "react";
 import { getAllToDo, addToDo, updateTodo, deleteToDo } from "./utils/HandleApi";
-
+import "./App.css";
 function App() {
   const [toDo, setToDo] = useState([]);
   const [text, setText] = useState("");
@@ -19,12 +19,12 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>To Do App</h1>
+        <h1>To Do List</h1>
 
         <div className="top">
           <input
             type="text"
-            placeholder="AddToDos..."
+            placeholder="Add a task"
             value={text}
             onChange={(e) => {
               setText(e.target.value);
@@ -33,7 +33,9 @@ function App() {
           <div
             className="add"
             onClick={
-              isUpdating
+              text === ""
+                ? null
+                : isUpdating
                 ? () =>
                     updateTodo(todoId, text, setToDo, setText, setisUpdating)
                 : () => addToDo(text, setText, setToDo)
